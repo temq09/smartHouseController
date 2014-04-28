@@ -15,11 +15,13 @@ TEMPLATE = app
 SOURCES += main.cpp\
         startwindow.cpp \
     modernpushbutton.cpp \
-    relaycontroller.cpp
+    relaycontroller.cpp \
+    relaycontrollerserver.cpp
 
 HEADERS  += startwindow.h \
     modernpushbutton.h \
-    relaycontroller.h
+    relaycontroller.h \
+    relaycontrollerserver.h
 
 FORMS    += startwindow.ui \
     relaycontroller.ui
