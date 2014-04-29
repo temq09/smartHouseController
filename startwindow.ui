@@ -18,11 +18,11 @@
     <item>
      <widget class="QTabWidget" name="tabWidget">
       <property name="currentIndex">
-       <number>0</number>
+       <number>2</number>
       </property>
-      <widget class="QWidget" name="tab">
+      <widget class="QWidget" name="tab_relayController">
        <attribute name="title">
-        <string>Tab 1</string>
+        <string>Relay Controller</string>
        </attribute>
        <layout class="QVBoxLayout" name="verticalLayout_2">
         <item>
@@ -30,10 +30,39 @@
         </item>
        </layout>
       </widget>
-      <widget class="QWidget" name="tab_2">
+      <widget class="QWidget" name="tab_videoController">
        <attribute name="title">
-        <string>Tab 2</string>
+        <string>Video Controller</string>
        </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_3">
+        <item>
+         <widget class="videoController" name="widget_2" native="true"/>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_audio">
+       <attribute name="title">
+        <string>Audio Player</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_4">
+        <item>
+         <widget class="QTabWidget" name="tabWidget_2">
+          <property name="currentIndex">
+           <number>1</number>
+          </property>
+          <widget class="QWidget" name="tab">
+           <attribute name="title">
+            <string>Tab 1</string>
+           </attribute>
+          </widget>
+          <widget class="QWidget" name="tab_2">
+           <attribute name="title">
+            <string>Tab 2</string>
+           </attribute>
+          </widget>
+         </widget>
+        </item>
+       </layout>
       </widget>
      </widget>
     </item>
@@ -65,6 +94,12 @@
    <class>relayController</class>
    <extends>QWidget</extends>
    <header location="global">relaycontroller.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>videoController</class>
+   <extends>QWidget</extends>
+   <header location="global">videocontroller.h</header>
    <container>1</container>
   </customwidget>
  </customwidgets>
